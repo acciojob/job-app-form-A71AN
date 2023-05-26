@@ -9,54 +9,61 @@
 	
 <body>
 	<!-- the entire body must be written by student -->
-	<form method="get">
-	<div>
-		<label for="name">Name*</label>
-		<input type="text" id="name" required>
-	</div>
-	
+	<form method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+        </div>
+        
+    
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+        </div>
+        
+    
+        <div>
+            
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" required>
+            
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" required>
+            
+            <label for="others">Others</label>
+            <input type="radio" id="others" name="gender" required>
+        </div>
+        
+        <div>
+            <label for="laptop">Choose your laptop brand</label>
+            <select name="laptop" id="laptop" required>
+                <option value="">Apple</option>
+                <option value="">Asus</option>
+                <option value="">HP</option>
+            </select>
+        </div>
 
-	<div>
-		<label for="email">Email*</label>
-		<input type="email" id="email" required>
-	</div>
-	
-
-	<div>
-		<label for="male">Male</label>
-		<input type="radio" id="male" name="gender" required>
-		
-		<label for="female">Female</label>
-		<input type="radio" id="female" name="gender" required>
-		
-		<label for="others">Others</label>
-		<input type="radio" id="others" name="gender" required>
-	</div>
-	
-	<div>
-		<label for="age">Age*</label>
-		<input type="number" id="age" required>
-	</div>
-	
-	<div>
-		<label for="dob">DOB*</label>
-		<input type="date" id="dob" required>
-	</div>
-	
-	<div>
-		<label for="password">Password*</label>
-		<input type="password" id="password" required>
-	</div>
-	
-	<div>
-		<label for="port">Website/Portfolio link</label>
-		<input type="url" id="portfolio">
-	</div>
-	<input type="submit">
-	
-    <script type="text/javascript" src="./script.js">
-</script>
-</form>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" min="0" required>
+        </div>
+        
+        <div>
+            <label for="dob">DOB</label>
+            <input type="date" id="dob" required>
+        </div>
+        
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+        </div>
+        
+        <div>
+            <label for="port">Website/Portfolio link</label>
+            <input type="url" id="portfolio">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 
 </html>
